@@ -5,8 +5,8 @@ This project trains a **Ridge regression** model to predict house prices on the 
 
 The notebook focuses on:
 -  Researching the dataset and and finding possible correlation between characteristics of houses and their prices
--  Feature ranking with **Mutual Information**[^2:]
--  Cross-validated** tuning of Ridge regularization[^3:] with `GridSearchCV`
+-  Feature ranking with **Mutual Information**[^2]
+-  Cross-validated** tuning of Ridge regularization[^3] with `GridSearchCV`
 
 ---
 
