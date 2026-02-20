@@ -1,4 +1,4 @@
-![Ames, Iowa](image-2.png)
+![Ames, Iowa, ](image-2.png)
 # House Prices (Ames) – Ridge Regression Pipeline
 
 This project trains a **Ridge regression** model to predict house prices on the Ames Housing dataset[^1]
@@ -6,7 +6,7 @@ This project trains a **Ridge regression** model to predict house prices on the 
 The notebook focuses on:
 -  Researching the dataset and and finding possible correlation between characteristics of houses and their prices
 -  Feature ranking with **Mutual Information**[^2]
--  Cross-validated** tuning of Ridge regularization[^3] with `GridSearchCV`
+-  Cross-validated** tuning of Ridge regularization**[^3] with GridSearchCV
 
 ---
 
@@ -15,7 +15,7 @@ The notebook focuses on:
 -  Datasets in folder Datasets:
    -  train.csv
    -  test.csv
-   -  test_with_predictions.csv` (original test columns + `SalePrice`)
+   -  test_with_predictions.csv (original test columns + `SalePrice`)
 -  house_prices.ipynb
 -  README.md
 -  requirements.txt
@@ -26,24 +26,24 @@ The notebook focuses on:
 ## How the model works 
 
 1. **Target transform**
-   - `y = log1p(SalePrice)` to reduce skew and stabilize error.
+   - y = log1p(SalePrice) to reduce skew and stabilize error.
 
 2. **Feature engineering (inside the pipeline)**
-   - `TotalSF = TotalBsmtSF + 1stFlrSF + 2ndFlrSF`
-   - `HouseAge = YrSold - YearBuilt`
-   - `RemodAge = YrSold - YearRemodAdd`
-   - `TotalBathrooms = FullBath + 0.5*HalfBath + BsmtFullBath + 0.5*BsmtHalfBath`
-   - `HasPool`, `HasGarage` as simple binary indicators
+   - TotalSF = TotalBsmtSF + 1stFlrSF + 2ndFlrSF
+   - HouseAge = YrSold - YearBuilt
+   - RemodAge = YrSold - YearRemodAdd
+   - TotalBathrooms = FullBath + 0.5*HalfBath + BsmtFullBath + 0.5*BsmtHalfBath
+   - HasPool, HasGarage as simple binary indicators
 
 3. **Skew handling (inside the pipeline)**
-   - Automatically applies `log1p` to highly skewed numeric columns (CV-safe).
+   - Automatically applies log1p to highly skewed numeric columns (CV-safe)
 
 4. **Preprocessing**
    - Numeric: median imputation + standard scaling
    - Categorical: most-frequent imputation + one-hot encoding
 
 5. **Model**
-   - Ridge regression with `alpha` tuned via `GridSearchCV` using 5-fold KFold CV and RMSE.
+   - Ridge regression with alpha tuned via GridSearchCV using 5-fold KFold CV and RMSE.
 
 ---
 
@@ -85,6 +85,6 @@ Python 3.9+ recommended.
 
 ## Resources:
 
-[^1]:    https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview\
-[^2]:    https://en.wikipedia.org/wiki/Mutual_information\
-[^3]:    https://www.geeksforgeeks.org/machine-learning/what-is-ridge-regression/  
+[^1]:    https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview
+[^2]:    https://en.wikipedia.org/wiki/Mutual_information
+[^3]:    https://www.geeksforgeeks.org/machine-learning/what-is-ridge-regression  
