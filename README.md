@@ -1,12 +1,12 @@
-![Ames, Iowa](image.png)
+![Ames, Iowa](image-2.png)
 # House Prices (Ames) – Ridge Regression Pipeline
 
 This project trains a **Ridge regression** model to predict house prices on the Ames Housing dataset[^1]
 
 The notebook focuses on:
 -  Researching the dataset and and finding possible correlation between characteristics of houses and their prices
--  Feature ranking with **Mutual Information**[^2]
--  Cross-validated** tuning of Ridge regularization[^3] with `GridSearchCV`
+-  Feature ranking with **Mutual Information**[^2:]
+-  Cross-validated** tuning of Ridge regularization[^3:] with `GridSearchCV`
 
 ---
 
@@ -85,6 +85,6 @@ Python 3.9+ recommended.
 
 ## Resources:
 
-1: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview
-2: https://en.wikipedia.org/wiki/Mutual_information
-3: https://www.geeksforgeeks.org/machine-learning/what-is-ridge-regression/  
+[^1]:    https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview\
+[^2]:    https://en.wikipedia.org/wiki/Mutual_information\
+[^3]:    https://www.geeksforgeeks.org/machine-learning/what-is-ridge-regression/  
