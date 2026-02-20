@@ -1,4 +1,4 @@
-!['House for sale', generated](image.png)<sup>Image generated using AI (DALL·E / ChatGPT)</sup>
+!['House for sale', AI generated](image.png)<sup>Image generated using AI (DALL·E / ChatGPT)</sup>
 # House Prices (Ames) – Ridge Regression Pipeline
 
 This project trains a **Ridge regression** model to predict house prices on the Ames Housing dataset[^1]
@@ -19,6 +19,7 @@ The notebook focuses on:
 -  house_prices.ipynb
 -  README.md
 -  requirements.txt
+-  images
 
 ---
 
