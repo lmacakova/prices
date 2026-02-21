@@ -64,11 +64,11 @@ Python 3.9+ recommended.
  ```
  python -m venv .venv
  ```
-    # macOS/Linux
+     macOS/Linux
  ```
  ource .venv/bin/activate
  ```
-    # Windows PowerShell
+     Windows PowerShell
  ```
  .venv\Scripts\Activate.ps1
  ```
