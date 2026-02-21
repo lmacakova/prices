@@ -3,13 +3,13 @@
 
 # House Prices (Ames) – Ridge Regression Pipeline
 
-This project trains a Ridge regression model to predict house prices on the Ames Housing dataset^1
+This project trains a Ridge regression model to predict house prices on the Ames Housing dataset[^1]
 
 ## The notebook focuses on:
 
 * Researching the dataset and finding a possible correlation between the characteristics of houses and their prices
-* Feature selection by correlation^2
-* Cross-validated tuning of Ridge regularization^3 with GridSearchCV
+* Feature selection by correlation[^2]
+* Cross-validated tuning of Ridge regularization[^3] with GridSearchCV
 
 ---
 
