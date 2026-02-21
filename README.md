@@ -26,7 +26,7 @@ This project trains a Ridge regression model to predict house prices on the Ames
 
 ---
 
-## How the model works
+## How the model works:
 
 1. Target transform
   * y = log1p(SalePrice) to reduce skew and stabilize error.
