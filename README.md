@@ -52,32 +52,33 @@ Python 3.9+ recommended.
 
 ---
 
-## Running the notebook
-
-1. Clone the repository with:
-bash
-
-git clone https://github.com/lmacakova/prices.git
-cd prices
-
-1. Create a virtual environment:
-bash
-
-python -m venv .venv
-### macOS/Linux
-
-source .venv/bin/activate
-
-### Windows PowerShell
-
-.venv\Scripts\Activate.ps1
-
-1. Install requirements:
-bash
-
+## How to work with jupyter notebook house_price_prediction.ipynb:
+1. Clone the repository with:\
+ bash
+ ```
+ git clone https://github.com/lmacakova/prices.git
+ cd prices
+ ```
+2. Create a virtual environment:\
+ bash
+ ```
+ python -m venv .venv
+ ```
+    # macOS/Linux
+ ```
+ ource .venv/bin/activate
+ ```
+    # Windows PowerShell
+ ```
+ .venv\Scripts\Activate.ps1
+ ```
+3. Install requirements:\
+ bash
+ ```
+ pip install --upgrade pip
  pip install -r requirements.txt
-
-1. Open the notebook in VS Code or Visual Studio Code and select "Python (Applied)" as the kernel.
+ ```
+4. Open the notebook in VS Code or Visual Studio Code and select Python (applied) as the kernel.
 
 ---
 
